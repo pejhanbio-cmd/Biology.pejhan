@@ -169,7 +169,31 @@ export const biologyBooks = {
   <li>فاقد اندامک‌هایی مثل وزیکول، شبکه آندوپلاسمی و دستگاه گلژی هستند.</li>
   <li>در نتیجه توانایی انجام درون‌بری و برون‌رانی را ندارند.</li>
 </ul>
+<h3>🎬 ویدئوهای آموزشی: درون‌بری و برون‌رانی</h3>
 
+<div class="video-grid">
+
+  <div class="video-wrapper">
+    <video controls preload="metadata" playsinline>
+      <source src="/Biology.pejhan/videos/endocytosis.mp4" type="video/mp4" />
+      مرورگر شما از پخش ویدئو پشتیبانی نمی‌کند.
+    </video>
+    <div class="video-caption">
+      <strong>درون‌بری (اندوسیتوز):</strong> ورود مواد به داخل یاخته
+    </div>
+  </div>
+
+  <div class="video-wrapper">
+    <video controls preload="metadata" playsinline>
+      <source src="/Biology.pejhan/videos/exocytosis.mp4" type="video/mp4" />
+      مرورگر شما از پخش ویدئو پشتیبانی نمی‌کند.
+    </video>
+    <div class="video-caption">
+      <strong>برون‌رانی (اگزوسیتوز):</strong> خروج مواد از یاخته
+    </div>
+  </div>
+
+</div>
 <h4>ه) اندامک‌هایی که در ساخت پروتئین نقش دارند:</h4>
 <ol>
   <li>ریبوزوم</li>
