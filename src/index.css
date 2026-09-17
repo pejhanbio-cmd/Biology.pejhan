@@ -753,3 +753,50 @@ button {
 [data-theme="dark"] .content-box em {
   color: var(--light-green);
 }
+/* ============ VIDEO ============ */
+.video-wrapper {
+  margin: 1.5rem 0;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(45, 80, 22, 0.15);
+  background: #000;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+.video-caption {
+  background: var(--bg-card);
+  padding: 0.8rem 1rem;
+  font-size: 0.88rem;
+  color: var(--text-soft);
+  text-align: center;
+  border-top: 1px solid var(--border);
+  font-weight: 500;
+}
+
+.video-caption strong {
+  color: var(--mat-cha);
+  font-weight: 700;
+}
+
+[data-theme="dark"] .video-caption strong {
+  color: var(--light-green);
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+@media (min-width: 800px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
