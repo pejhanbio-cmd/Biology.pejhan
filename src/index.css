@@ -638,3 +638,118 @@ button {
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(45, 80, 22, 0.3);
 }
+/* ============ TABLE ============ */
+.content-box table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.92rem;
+  background: var(--bg);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(45, 80, 22, 0.06);
+}
+
+.content-box thead {
+  background: linear-gradient(135deg, var(--forest), var(--mat-cha));
+  color: white;
+}
+
+.content-box th {
+  padding: 0.9rem 0.8rem;
+  text-align: right;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.content-box th:last-child {
+  border-left: none;
+}
+
+.content-box td {
+  padding: 0.8rem 0.8rem;
+  border-bottom: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+  color: var(--text-soft);
+  line-height: 1.7;
+  vertical-align: top;
+}
+
+.content-box td:last-child {
+  border-left: none;
+}
+
+.content-box tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.content-box tbody tr:nth-child(even) {
+  background: rgba(123, 154, 94, 0.05);
+}
+
+[data-theme="dark"] .content-box tbody tr:nth-child(even) {
+  background: rgba(123, 154, 94, 0.1);
+}
+
+.content-box tbody tr:hover {
+  background: rgba(123, 154, 94, 0.12);
+  transition: background 0.2s;
+}
+
+/* جدول در موبایل */
+@media (max-width: 700px) {
+  .content-box table {
+    font-size: 0.8rem;
+  }
+  .content-box th,
+  .content-box td {
+    padding: 0.6rem 0.5rem;
+  }
+}
+
+/* ============ HEADINGS داخل content-box ============ */
+.content-box h4 {
+  font-size: 1rem;
+  color: var(--mat-cha);
+  margin: 1.2rem 0 0.5rem;
+  font-weight: 700;
+}
+
+[data-theme="dark"] .content-box h4 {
+  color: var(--light-green);
+}
+
+.content-box ul,
+.content-box ol {
+  margin: 0.5rem 0 1rem 1.5rem;
+  padding-right: 1.2rem;
+  color: var(--text-soft);
+}
+
+.content-box li {
+  margin-bottom: 0.4rem;
+  line-height: 1.9;
+}
+
+.content-box ul ul,
+.content-box ol ul,
+.content-box ul ol,
+.content-box ol ol {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.content-box strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.content-box em {
+  font-style: italic;
+  color: var(--mat-cha);
+}
+
+[data-theme="dark"] .content-box em {
+  color: var(--light-green);
+}
