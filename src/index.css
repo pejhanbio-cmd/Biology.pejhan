@@ -800,3 +800,50 @@ button {
     grid-template-columns: 1fr 1fr;
   }
 }
+/* ============ BACK BUTTON ============ */
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--bg-card);
+  color: var(--mat-cha);
+  padding: 0.6rem 1.2rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.25s ease;
+  box-shadow: var(--shadow);
+}
+
+.back-button:hover {
+  background: var(--mat-cha);
+  color: white;
+  border-color: var(--mat-cha);
+  transform: translateX(4px);
+}
+
+[data-theme="dark"] .back-button {
+  color: var(--light-green);
+}
+
+[data-theme="dark"] .back-button:hover {
+  color: white;
+}
+
+.back-arrow {
+  font-size: 1.1rem;
+  transition: transform 0.25s;
+}
+
+.back-button:hover .back-arrow {
+  transform: translateX(-3px);
+}
+
+.back-button-row {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
