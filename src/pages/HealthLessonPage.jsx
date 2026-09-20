@@ -1,5 +1,6 @@
 import { useParams, Link, Navigate } from 'react-router-dom'
 import { healthBook } from '../data/content.js'
+import BackButton from '../components/BackButton.jsx'
 
 export default function HealthLessonPage() {
   const { lessonId } = useParams()
@@ -15,6 +16,8 @@ export default function HealthLessonPage() {
       </div>
 
       <div className="container">
+        <BackButton to="/course/health" label="بازگشت به لیست دروس سلامت و بهداشت" />
+
         <div className="breadcrumb">
           <Link to="/">خانه</Link> /{' '}
           <Link to="/course/health">{healthBook.title}</Link> /{' '}
