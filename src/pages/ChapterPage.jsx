@@ -1,5 +1,6 @@
 import { useParams, Link, Navigate } from 'react-router-dom'
 import { biologyBooks } from '../data/content.js'
+import BackButton from '../components/BackButton.jsx'
 
 export default function ChapterPage() {
   const { courseId, chapterId } = useParams()
@@ -18,6 +19,8 @@ export default function ChapterPage() {
       </div>
 
       <div className="container">
+        <BackButton to={`/course/${courseId}`} label={`بازگشت به لیست فصل‌های ${book.title}`} />
+
         <div className="breadcrumb">
           <Link to="/">خانه</Link> /{' '}
           <Link to={`/course/${courseId}`}>{book.title}</Link> /{' '}
