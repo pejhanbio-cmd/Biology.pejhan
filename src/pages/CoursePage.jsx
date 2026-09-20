@@ -1,10 +1,10 @@
 import { useParams, Link, Navigate } from 'react-router-dom'
 import { biologyBooks, healthBook } from '../data/content.js'
+import BackButton from '../components/BackButton.jsx'
 
 export default function CoursePage() {
   const { courseId } = useParams()
 
-  // کتاب سلامت و بهداشت
   if (courseId === 'health') {
     return (
       <>
@@ -14,6 +14,8 @@ export default function CoursePage() {
         </div>
 
         <div className="container">
+          <BackButton to="/" label="بازگشت به صفحه اصلی" />
+
           <div className="breadcrumb">
             <Link to="/">خانه</Link> / {healthBook.title}
           </div>
@@ -38,7 +40,6 @@ export default function CoursePage() {
     )
   }
 
-  // کتاب‌های زیست‌شناسی
   const book = biologyBooks[courseId]
   if (!book) return <Navigate to="/" replace />
 
@@ -50,6 +51,8 @@ export default function CoursePage() {
       </div>
 
       <div className="container">
+        <BackButton to="/" label="بازگشت به صفحه اصلی" />
+
         <div className="breadcrumb">
           <Link to="/">خانه</Link> / {book.title}
         </div>
