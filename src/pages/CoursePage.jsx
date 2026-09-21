@@ -14,11 +14,17 @@ export default function CoursePage() {
         </div>
 
         <div className="container">
-          <BackButton to="/" label="بازگشت به صفحه اصلی" />
+  <div className="back-button-row">
+    <BackButton to="/" label="بازگشت به صفحه اصلی" />
+    <Link to="/health/quiz" className="back-button">
+      <span>📝</span>
+      <span>شروع آزمونک</span>
+    </Link>
+  </div>
 
-          <div className="breadcrumb">
-            <Link to="/">خانه</Link> / {healthBook.title}
-          </div>
+  <div className="breadcrumb">
+    <Link to="/">خانه</Link> / {healthBook.title}
+  </div>
 
           <div className="chapters-list">
             {healthBook.lessons.map(lesson => (
