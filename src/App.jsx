@@ -7,6 +7,7 @@ import Home from './pages/Home.jsx'
 import CoursePage from './pages/CoursePage.jsx'
 import ChapterPage from './pages/ChapterPage.jsx'
 import HealthLessonPage from './pages/HealthLessonPage.jsx'
+import QuizPage from './pages/QuizPage.jsx'
 import NotFound from './pages/NotFound.jsx'
 
 export default function App() {
@@ -39,6 +40,7 @@ export default function App() {
             path="/health/lesson/:lessonId"
             element={<HealthLessonPage />}
           />
+          <Route path="/health/quiz" element={<QuizPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
